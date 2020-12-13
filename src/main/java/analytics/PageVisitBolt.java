@@ -24,8 +24,8 @@ public class PageVisitBolt extends BaseRichBolt {
 		pageVisitCounts.putIfAbsent(url, 0);
 		userVisitCounts.putIfAbsent(userId, 0);
 
-		pageVisitCounts.put(url, pageVisitCounts.get(url));
-		userVisitCounts.put(userId, userVisitCounts.get(userId));
+		pageVisitCounts.put(url, pageVisitCounts.get(url)+1);
+		userVisitCounts.put(userId, userVisitCounts.get(userId)+1);
 		totalVisitCounts+=1;
 		
 		System.out.printf("received visid #%d from user %d {total : %d} to page %s { total: %d}\n",
