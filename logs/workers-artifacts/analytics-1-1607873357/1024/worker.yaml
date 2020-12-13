@@ -1,0 +1,4 @@
+worker-id: 108d5774-e373-494a-8b24-a699be4f0d70
+logs.users: []
+logs.groups: []
+topology.submitter.user: kafkastormuser
